@@ -1,11 +1,8 @@
-<%- include('header'); -%>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#" style="margin-left: 20px;" class="center-text">Image-O-Pedia</a>
-      </nav>
+<%- include('./partials/header'); -%>
         <form method="POST" action="/show/<%=imgFind._id%>/edit" style="margin: 20px;">
             <input placeholder="Enter image name" name="name" type="text" value=<%=imgFind.imgName%>  />
             <input placeholder="Enter image full url" name="url" type="text" value=<%=imgFind.imgUrl%>  />
             <input placeholder="Enter image description" name="details" type="text" value=<%=imgFind.imgDetails%>  />
             <button type="submit">Submit</button>
         </form>    
-<%- include('footer'); -%>
+<%- include('./partials/footer'); -%>

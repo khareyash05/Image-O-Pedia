@@ -1,11 +1,8 @@
-<%- include('header'); -%>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#" style="margin-left: 20px;" class="center-text">Image-O-Pedia</a>
-    </nav>
+<%- include('./partials/header'); -%>
     <form method="POST" action="/new" style="margin: 20px;">
         <input placeholder="Enter image name" name="name" type="text"/><br><br>
         <input placeholder="Enter image full url" name="url" type="text"/><br><br>
         <input placeholder="Enter image description" name="details" type="text"/><br><br>
         <button type="submit" class="btn btn-primary" >Submit</button>
     </form>
-<%- include('footer'); -%>
+<%- include('./partials/footer'); -%>

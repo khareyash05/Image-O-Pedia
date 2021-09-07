@@ -1,11 +1,8 @@
-<%- include('header'); -%>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#" style="margin-left: 20px;" class="center-text">Image-O-Pedia</a>
-  </nav>
+<%- include('./partials/header'); -%>
   <div style="margin: 20px;">
     <h1>Name : <%=imgFind.imgName%></h1>
     <h2>Image Details : <%=imgFind.imgDetails%></h2><br><br>
     <a href="/show/<%=imgFind._id%>/edit"><button class="btn btn-primary">Edit</button></a>
     <a href="/show/delete/<%=imgFind._id%>"><button class="btn btn-danger">Delete</button></a>
   </div>
-<%- include('footer'); -%>
+<%- include('./partials/footer'); -%>
