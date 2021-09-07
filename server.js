@@ -50,7 +50,7 @@ app.get("/show/:id",async(req,res)=>{
 })
 
 // a get request to /new should show a form to upload a new image
-app.get("/?/new",(req,res)=>{
+app.get("/new",(req,res)=>{
     console.log("dfhgufguu");
     res.render("new")
 })
